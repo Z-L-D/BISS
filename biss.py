@@ -18,7 +18,7 @@ options = Options()
 options.add_argument('-headless')  # Remove this line if you want Firefox to run visibly
 
 # Define the webdriver
-webdriver_service = Service('path_to_your_geckodriver.exe')
+webdriver_service = Service('env/bin/')
 driver = webdriver.Firefox(service=webdriver_service, options=options)
 
 def bing_image_search_url(query):
